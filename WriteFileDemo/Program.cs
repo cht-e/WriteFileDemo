@@ -11,7 +11,7 @@ namespace WriteFileDemo {
             // test 123
             // 456
             var log = args.Length > 0 ? string.Join(", ", args) : "Empty";
-            File.WriteAllText(@"D:/_writeFileDemo.txt", string.Format("{0}, {1}", DateTime.Now, log));
+            File.WriteAllText(@"D:/_writeFileDemo.txt", string.Format("{0}, {1}", DateTime.Now.ToUniversalTime(), log));
         }
     }
 }
