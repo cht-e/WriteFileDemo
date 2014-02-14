@@ -10,6 +10,7 @@ namespace WriteFileDemo {
         static void Main(string[] args) {
             // test 123
             // 456
+            // beta 1
             var log = args.Length > 0 ? string.Join(", ", args) : "Empty";
             File.WriteAllText(@"D:/_writeFileDemo.txt", string.Format("{0}, {1}", DateTime.Now.ToUniversalTime(), log));
         }
