@@ -12,7 +12,7 @@ namespace WriteFileDemo {
 
             File.WriteAllText(
                 @"D:/_writeFileDemo.txt", 
-                string.Format("{0}, {1}", DateTime.Now, log)
+                string.Format("Last Update Time: {0}, {1}", DateTime.Now, log)
             );
         }
     }
